@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Templates - Forest Business Alliance</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" type="image/x-icon" href="figures/favicon.ico">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			
+			<!-- Top Navigation -->
+			<nav id="top-nav" style="position: fixed; top: 20px; right: 20px; z-index: 1000;">
+				<ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 20px;">
+					<li><a href="index.html" style="color: white; text-decoration: none !important; border-bottom: none !important; font-weight: 300; text-shadow: 1px 1px 2px rgba(0,0,0,0.5); text-transform: uppercase;">HOME</a></li>
+					<li><a href="triage.html" style="color: white; text-decoration: none !important; border-bottom: none !important; font-weight: 300; text-shadow: 1px 1px 2px rgba(0,0,0,0.5); text-transform: uppercase;">TRIAGE</a></li>
+					<li><a href="tribal.html" style="color: white; text-decoration: none !important; border-bottom: none !important; font-weight: 300; text-shadow: 1px 1px 2px rgba(0,0,0,0.5); text-transform: uppercase;">TRIBAL</a></li>
+					<li><a href="workshops.html" style="color: white; text-decoration: none !important; border-bottom: none !important; font-weight: 300; text-shadow: 1px 1px 2px rgba(0,0,0,0.5); text-transform: uppercase;">WORKSHOPS</a></li>
+					<li><a href="templates.html" style="color: white; text-decoration: underline !important; border-bottom: none !important; font-weight: 300; text-shadow: 1px 1px 2px rgba(0,0,0,0.5); text-transform: uppercase;">TEMPLATES</a></li>
+					<li><a href="about.html" style="color: white; text-decoration: none !important; border-bottom: none !important; font-weight: 300; text-shadow: 1px 1px 2px rgba(0,0,0,0.5); text-transform: uppercase;">ABOUT</a></li>
+				</ul>
+			</nav>
+			
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Templates</h1>
+						<p style="max-width: 800px; margin: 0 auto;">Access our comprehensive collection of business templates, forms, and resources to help you build and grow your forest business.</p>
+					</header>
+
+					<!-- Templates Content -->
+					<div style="max-width: 900px; margin: 0 auto; padding: 20px; position: relative; z-index: 100; background: rgba(0,0,0,0.4); border-radius: 10px; margin-top: 40px;">
+						
+						<!-- Business Planning Section -->
+						<div class="template-section" style="margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.4); border-radius: 8px; background: rgba(255,255,255,0.1); box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+							<div class="template-header" onclick="toggleSection('business-planning')" style="padding: 15px; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
+								<div style="display: flex; align-items: center;">
+									<span style="font-size: 1.5em; margin-right: 10px;">📋</span>
+									<h3 style="margin: 0; color: white; font-weight: bold;">Business Planning</h3>
+								</div>
+								<span id="business-planning-arrow" style="color: white; font-size: 1.2em;">▼</span>
+							</div>
+							<div id="business-planning-content" class="template-content" style="display: none; padding: 0 15px 15px;">
+								<p style="color: #ccc; margin-bottom: 15px;">Strategic planning templates and business development tools</p>
+								<div class="template-item" style="margin-bottom: 10px; padding: 10px; background: rgba(255,255,255,0.03); border-radius: 4px;">
+									<span style="margin-right: 10px;">📊</span>
+									<a href="templates/business-planning/business-plan-template.docx" style="color: white; text-decoration: none;">Business Plan Template</a>
+								</div>
+								<div class="template-item" style="margin-bottom: 10px; padding: 10px; background: rgba(255,255,255,0.03); border-radius: 4px;">
+									<span style="margin-right: 10px;">📈</span>
+									<a href="templates/business-planning/market-analysis-template.xlsx" style="color: white; text-decoration: none;">Market Analysis Template</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Compliance Section -->
+						<div class="template-section" style="margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.4); border-radius: 8px; background: rgba(255,255,255,0.1); box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+							<div class="template-header" onclick="toggleSection('compliance')" style="padding: 15px; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
+								<div style="display: flex; align-items: center;">
+									<span style="font-size: 1.5em; margin-right: 10px;">⚖️</span>
+									<h3 style="margin: 0; color: white; font-weight: bold;">Compliance</h3>
+								</div>
+								<span id="compliance-arrow" style="color: white; font-size: 1.2em;">▼</span>
+							</div>
+							<div id="compliance-content" class="template-content" style="display: none; padding: 0 15px 15px;">
+								<p style="color: #ccc; margin-bottom: 15px;">Regulatory compliance and legal documentation</p>
+								<div class="template-item" style="margin-bottom: 10px; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 4px;">
+									<span style="margin-right: 10px;">📄</span>
+									<a href="templates/compliance/environmental-checklist.pdf" style="color: white; text-decoration: none;">Environmental Compliance Checklist</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Grant Guidelines/RFPs Section -->
+						<div class="template-section" style="margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.4); border-radius: 8px; background: rgba(255,255,255,0.1); box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+							<div class="template-header" onclick="toggleSection('grants')" style="padding: 15px; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
+								<div style="display: flex; align-items: center;">
+									<span style="font-size: 1.5em; margin-right: 10px;">🎯</span>
+									<h3 style="margin: 0; color: white; font-weight: bold;">Grant Guidelines/RFPs</h3>
+								</div>
+								<span id="grants-arrow" style="color: white; font-size: 1.2em;">▼</span>
+							</div>
+							<div id="grants-content" class="template-content" style="display: none; padding: 0 15px 15px;">
+								<p style="color: #ccc; margin-bottom: 15px;">Grant application guidelines and RFP responses</p>
+								<div class="template-item" style="margin-bottom: 10px; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 4px;">
+									<span style="margin-right: 10px;">📋</span>
+									<a href="templates/grant-guidelines-rfps/grant-application-guide.pdf" style="color: white; text-decoration: none;">Grant Application Guide</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Budgets Section -->
+						<div class="template-section" style="margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.4); border-radius: 8px; background: rgba(255,255,255,0.1); box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+							<div class="template-header" onclick="toggleSection('budgets')" style="padding: 15px; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
+								<div style="display: flex; align-items: center;">
+									<span style="font-size: 1.5em; margin-right: 10px;">💰</span>
+									<h3 style="margin: 0; color: white; font-weight: bold;">Budgets</h3>
+								</div>
+								<span id="budgets-arrow" style="color: white; font-size: 1.2em;">▼</span>
+							</div>
+							<div id="budgets-content" class="template-content" style="display: none; padding: 0 15px 15px;">
+								<p style="color: #ccc; margin-bottom: 15px;">Financial planning and budget templates</p>
+								<div class="template-item" style="margin-bottom: 10px; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 4px;">
+									<span style="margin-right: 10px;">📊</span>
+									<a href="templates/budgets/annual-budget-template.xlsx" style="color: white; text-decoration: none;">Annual Budget Template</a>
+								</div>
+								<div class="template-item" style="margin-bottom: 10px; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 4px;">
+									<span style="margin-right: 10px;">💹</span>
+									<a href="templates/budgets/cash-flow-projection.xlsx" style="color: white; text-decoration: none;">Cash Flow Projection</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- eCivis Section -->
+						<div class="template-section" style="margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.4); border-radius: 8px; background: rgba(255,255,255,0.1); box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+							<div class="template-header" onclick="toggleSection('ecivis')" style="padding: 15px; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
+								<div style="display: flex; align-items: center;">
+									<span style="font-size: 1.5em; margin-right: 10px;">🖥️</span>
+									<h3 style="margin: 0; color: white; font-weight: bold;">eCivis</h3>
+								</div>
+								<span id="ecivis-arrow" style="color: white; font-size: 1.2em;">▼</span>
+							</div>
+							<div id="ecivis-content" class="template-content" style="display: none; padding: 0 15px 15px;">
+								<p style="color: #ccc; margin-bottom: 15px;">eCivis platform resources and templates</p>
+								<div class="template-item" style="margin-bottom: 10px; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 4px;">
+									<span style="margin-right: 10px;">📱</span>
+									<a href="templates/ecivis/ecivis-setup-guide.pdf" style="color: white; text-decoration: none;">eCivis Setup Guide</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Forms Section -->
+						<div class="template-section" style="margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.4); border-radius: 8px; background: rgba(255,255,255,0.1); box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+							<div class="template-header" onclick="toggleSection('forms')" style="padding: 15px; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
+								<div style="display: flex; align-items: center;">
+									<span style="font-size: 1.5em; margin-right: 10px;">📝</span>
+									<h3 style="margin: 0; color: white; font-weight: bold;">Forms</h3>
+								</div>
+								<span id="forms-arrow" style="color: white; font-size: 1.2em;">▼</span>
+							</div>
+							<div id="forms-content" class="template-content" style="display: none; padding: 0 15px 15px;">
+								<p style="color: #ccc; margin-bottom: 15px;">Standard forms and documentation templates</p>
+								<div class="template-item" style="margin-bottom: 10px; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 4px;">
+									<span style="margin-right: 10px;">✅</span>
+									<a href="templates/forms/project-intake-form.pdf" style="color: white; text-decoration: none;">Project Intake Form</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Proposals Section -->
+						<div class="template-section" style="margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.4); border-radius: 8px; background: rgba(255,255,255,0.1); box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+							<div class="template-header" onclick="toggleSection('proposals')" style="padding: 15px; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
+								<div style="display: flex; align-items: center;">
+									<span style="font-size: 1.5em; margin-right: 10px;">📑</span>
+									<h3 style="margin: 0; color: white; font-weight: bold;">Proposals</h3>
+								</div>
+								<span id="proposals-arrow" style="color: white; font-size: 1.2em;">▼</span>
+							</div>
+							<div id="proposals-content" class="template-content" style="display: none; padding: 0 15px 15px;">
+								<p style="color: #ccc; margin-bottom: 15px;">Proposal templates and writing guides</p>
+								<div class="template-item" style="margin-bottom: 10px; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 4px;">
+									<span style="margin-right: 10px;">📄</span>
+									<a href="templates/proposals/project-proposal-template.docx" style="color: white; text-decoration: none;">Project Proposal Template</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<script>
+						function toggleSection(sectionId) {
+							console.log('Toggle called for:', sectionId);
+							const content = document.getElementById(sectionId + '-content');
+							const arrow = document.getElementById(sectionId + '-arrow');
+							
+							console.log('Content element:', content);
+							console.log('Arrow element:', arrow);
+							
+							if (content.style.display === 'none' || content.style.display === '') {
+								content.style.display = 'block';
+								arrow.textContent = '▲';
+								console.log('Expanded section:', sectionId);
+							} else {
+								content.style.display = 'none';
+								arrow.textContent = '▼';
+								console.log('Collapsed section:', sectionId);
+							}
+						}
+						
+						// Test function to verify JavaScript is working
+						console.log('Templates page JavaScript loaded successfully');
+					</script>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright">&copy; Forest Business Alliance 2025</span>
+					</footer>
+
+			</div>
+		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
+</html>
