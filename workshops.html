@@ -8,6 +8,25 @@
 		<link rel="icon" type="image/x-icon" href="figures/favicon.ico">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+		<!-- Custom background for Workshops page - Vibrant green tone in mountains only -->
+		<style>
+			#bg {
+				background: #348cb2 url("assets/css/images/bg.jpg") bottom left !important;
+				background-repeat: repeat-x !important;
+			}
+			/* Add a subtle green overlay only to the bottom portion */
+			#bg::after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height: 60%;
+				background: linear-gradient(transparent, rgba(34, 139, 34, 0.3));
+				pointer-events: none;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 		<div id="wrapper">
