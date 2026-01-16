@@ -110,7 +110,11 @@
 		&.style4 { &:after { background-color: _palette(accent4); } }
 		&.style5 { &:after { background-color: _palette(accent5); } }
 		&.style6 { &:after { background-color: _palette(accent6); } }
-
+	&:hover {
+		&:after {
+			opacity: 0;
+		}
+	}
 		body.is-preload & {
 			&:after {
 				opacity: 1.0;
