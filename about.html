@@ -7,6 +7,60 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.team-grid {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 2rem;
+				margin: 3rem 0;
+			}
+			.team-member {
+				background-color: #2e3842;
+				border-radius: 8px;
+				overflow: hidden;
+				transition: transform 0.3s ease, box-shadow 0.3s ease;
+			}
+			.team-member:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+			}
+			.team-member img {
+				width: 100%;
+				height: 300px;
+				object-fit: cover;
+			}
+			.team-member-content {
+				padding: 2rem;
+			}
+			.team-member h3 {
+				margin: 0 0 1rem 0;
+				color: #ffffff;
+				font-size: 1.5rem;
+			}
+			.team-member p {
+				color: #c1c1c1;
+				line-height: 1.6;
+				margin-bottom: 1rem;
+			}
+			.team-member .icon {
+				color: #9bf1ff;
+				font-size: 1.5rem;
+				transition: color 0.2s ease;
+			}
+			.team-member .icon:hover {
+				color: #ffffff;
+			}
+			@media screen and (max-width: 980px) {
+				.team-grid {
+					grid-template-columns: repeat(2, 1fr);
+				}
+			}
+			@media screen and (max-width: 736px) {
+				.team-grid {
+					grid-template-columns: 1fr;
+				}
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -49,126 +103,123 @@
 						</div>
 					</section>
 
+				<!-- Main -->
+					<div id="main">
 
-				<!-- Two -->
-					<section id="two" class="spotlights">
-						<section>
-							<a href="generic.html" class="image">
-							<img src="images/vance.jpg" alt="" data-position="top center" />
-						</a>
-						<div class="content">
+						<!-- Team Section -->
+						<section id="team">
 							<div class="inner">
 								<header class="major">
-									<h3>Vance Russell</h3>
+									<h2>Our Team</h2>
 								</header>
-								<p>Vance is a co-founder of FBA and owner of 3point.xyz, providing forest management, conservation finance, technology for wildlife, wildland and protected
-								area management, and strategic rewilding services.</p>
-									<a href="https://www.linkedin.com/in/vance-russell-ab596810/?skipRedirect=true" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a>
-							</div>
-						</div>
-					</section>
-					<section>
-						<a href="generic.html" class="image">
-							<img src="images/regine.jpg" alt="" data-position="top center" />
-						</a>
-						<div class="content">
-							<div class="inner">
-								<header class="major">
-									<h3>Regine Miller</h3>
-								</header>
-								<p>Regine is a co-founder of FBA and owner of Headwaters Environmental, Inc. providing services in forest health, permitting, grant administration, biomass utilization, and workforce development</p>
-									<a href="https://www.linkedin.com/in/regine-miller-789b734/?skipRedirect=true" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a>
-							</div>
-						</div>
-					</section>
-					<section>
-						<a href="generic.html" class="image">
-							<img src="images/cherilyn.jpg" alt="" data-position="center center" />
-						</a>
-						<div class="content">
-							<div class="inner">
-								<header class="major">
-									<h3>Cherilyn Ashmead</h3>
-								</header>
-								<p>Innovative thinker and open listener who enjoys working with diverse groups toward common goals. I specialize in natural resources with rural and tribal communities.</p>
-									<a href="https://www.linkedin.com/in/cherilyn-ashmead-13a421112/" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a>
-							</div>
-						</div>
-					</section>
-					<section>
-						<a href="generic.html" class="image">
-							<img src="images/chris.jpg" alt="" data-position="top center" />
-						</a>
-						<div class="content">
-							<div class="inner">
-								<header class="major">
-									<h3>Christopher Sacco</h3>
-								</header>
-								<p>Owner of Aegis Conservation Ecology & Regenerative Development LLC with a 20-year track record of working collaboratively with diverse partners to design and implement impactful projects.</p>
-									<a href="https://www.linkedin.com/in/christophersacco/?skipRedirect=true" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a>
-							</div>
-						</div>
-					</section>
-					<section>
-						<a href="generic.html" class="image">
-							<img src="images/martin.jpg" alt="" data-position="top center" />
-						</a>
-						<div class="content">
-							<div class="inner">
-								<header class="major">
-									<h3>Martin Twer</h3>
-								</header>
-								<p>Biomass Program Director, The Watershed Research & Training Center. Over 15 years of experience in renewable energy research & outreach.</p>
-									<a href="https://www.linkedin.com/in/martintwer/?skipRedirect=true" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a>
-							</div>
-						</div>
-					</section>
-				</section>
+								
+								<div class="team-grid">
+									<!-- Vance Russell -->
+									<div class="team-member">
+										<img src="images/vance.jpg" alt="Vance Russell" />
+										<div class="team-member-content">
+											<h3>Vance Russell</h3>
+											<p>Vance is a co-founder of FBA and owner of 3point.xyz, providing forest management, conservation finance, technology for wildlife, wildland and protected area management, and strategic rewilding services.</p>
+											<a href="https://www.linkedin.com/in/vance-russell-ab596810/?skipRedirect=true" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a>
+										</div>
+									</div>
 
-			<!-- Three -->
-				<section id="three">
-					<div class="inner">
-						<header class="major">
-							<h2>Partners</h2>
-						</header>
-						<p><p>We also work closely with the following partners</p>
-						<ul style="list-style: none; padding-left: 0;">
-							<li>
-								<i class="icon solid fa-tree" style="color: #228B22;"></i>
-								Eric Holst, RFP 3156, Environmental Defense Fund
-							</li>
-							<li>
-								<i class="icon solid fa-tree" style="color: #228B22;"></i>
-								Jim Adriance, Independent Consultant
-							</li>
-							<li>
-								<i class="icon solid fa-tree" style="color: #228B22;"></i>
-								Kathleen Dowd, Independent Consultant
-							</li>
-							<li>
-								<i class="icon solid fa-tree" style="color: #228B22;"></i>
-								Kerri Rinne, United Auburn Indian Community
-							</li>
-							<li>
-								<i class="icon solid fa-tree" style="color: #228B22;"></i>
-								Leander Lacy, Lacy Consulting Services
-							</li>
-							<li>
-								<i class="icon solid fa-tree" style="color: #228B22;"></i>
-								Mark Ferguson, Brant & Cochran
-							</li>
-							<li>
-								<i class="icon solid fa-tree" style="color: #228B22;"></i>
-								Merritt Jenkins, Kodama Solutions
-							</li>
-							<li>
-								<i class="icon solid fa-tree" style="color: #228B22;"></i>
-								Roy Anderson, The Beck Group
-							</li></p>
+									<!-- Regine Miller -->
+									<div class="team-member">
+										<img src="images/regine.jpg" alt="Regine Miller" />
+										<div class="team-member-content">
+											<h3>Regine Miller</h3>
+											<p>Regine is a co-founder of FBA and owner of Headwaters Environmental, Inc. providing services in forest health, permitting, grant administration, biomass utilization, and workforce development</p>
+											<a href="https://www.linkedin.com/in/regine-miller-789b734/?skipRedirect=true" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a>
+										</div>
+									</div>
+
+									<!-- Cherilyn Ashmead -->
+									<div class="team-member">
+										<img src="images/cherilyn.jpg" alt="Cherilyn Ashmead" />
+										<div class="team-member-content">
+											<h3>Cherilyn Ashmead</h3>
+											<p>Innovative thinker and open listener who enjoys working with diverse groups toward common goals. I specialize in natural resources with rural and tribal communities.</p>
+											<a href="https://www.linkedin.com/in/cherilyn-ashmead-13a421112/" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a>
+										</div>
+									</div>
+
+									<!-- Christopher Sacco -->
+									<div class="team-member">
+										<img src="images/chris.jpg" alt="Christopher Sacco" />
+										<div class="team-member-content">
+											<h3>Christopher Sacco</h3>
+											<p>Owner of Aegis Conservation Ecology & Regenerative Development LLC with a 20-year track record of working collaboratively with diverse partners to design and implement impactful projects.</p>
+											<a href="https://www.linkedin.com/in/christophersacco/?skipRedirect=true" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a>
+										</div>
+									</div>
+
+									<!-- Martin Twer -->
+									<div class="team-member">
+										<img src="images/martin.jpg" alt="Martin Twer" />
+										<div class="team-member-content">
+											<h3>Martin Twer</h3>
+											<p>Biomass Program Director, The Watershed Research & Training Center. Over 15 years of experience in renewable energy research & outreach.</p>
+											<a href="https://www.linkedin.com/in/martintwer/?skipRedirect=true" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<!-- Partners Section -->
+						<section id="three">
+							<div class="inner">
+								<header class="major">
+									<h2>Partners</h2>
+								</header>
+								<p>We also work closely with the following partners</p>
+								<ul style="list-style: none; padding-left: 0;">
+                                    <li>
+                                        <i class="icon solid fa-tree" style="color: #228B22;"></i>
+                                        Bruce Goines, RFP 2221, Marin Wildfire Prevention Authority
+                                    </li>
+                                    <li>
+										<i class="icon solid fa-tree" style="color: #228B22;"></i>
+										Eric Holst, RFP 3156, Environmental Defense Fund
+									</li>
+									<li>
+										<i class="icon solid fa-tree" style="color: #228B22;"></i>
+										Jim Adriance, Independent Consultant
+									</li>
+									<li>
+										<i class="icon solid fa-tree" style="color: #228B22;"></i>
+										Kathleen Dowd, Independent Consultant
+									</li>
+									<li>
+										<i class="icon solid fa-tree" style="color: #228B22;"></i>
+										Kerri Rinne, United Auburn Indian Community
+									</li>
+									<li>
+										<i class="icon solid fa-tree" style="color: #228B22;"></i>
+										Leander Lacy, Lacy Consulting Services
+									</li>
+									<li>
+										<i class="icon solid fa-tree" style="color: #228B22;"></i>
+										Mark Ferguson, Brant & Cochran
+									</li>
+									<li>
+										<i class="icon solid fa-tree" style="color: #228B22;"></i>
+										Merritt Jenkins, Kodama Solutions
+									</li>
+                                    <li>
+                                        <i class="icon solid fa-tree" style="color: #228B22;"></i>
+                                        Neal Gottlieb, DoGood CFO
+                                    </li>
+                                    <li>
+										<i class="icon solid fa-tree" style="color: #228B22;"></i>
+										Roy Anderson, The Beck Group
+									</li>
+								</ul>
+							</div>
+						</section>
+
 					</div>
-				</section>
-
-		</div>
 		
 		<!-- Footer -->
 		<footer id="footer">
