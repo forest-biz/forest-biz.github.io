@@ -1,0 +1,93 @@
+/* Template Grid Styles */
+.template-grid {
+	display: grid;
+	gap: 0.5rem;
+	margin: 2rem 0;
+	justify-content: start;
+}
+
+.template-grid.grid-3x4 {
+	grid-template-columns: repeat(5, auto);
+}
+
+.template-grid.grid-2x2 {
+	grid-template-columns: repeat(2, auto);
+}
+
+.template-grid.grid-2x1 {
+	grid-template-columns: repeat(2, auto);
+}
+
+.template-grid.grid-3x3 {
+	grid-template-columns: repeat(3, auto);
+}
+
+.template-grid.grid-2x5 {
+	grid-template-columns: repeat(5, auto);
+}
+
+.template-tile {
+	background-color: #2e3842;
+	border-radius: 4px;
+	padding: 1rem;
+	text-align: center;
+	transition: background-color 0.2s ease-in-out;
+	cursor: pointer;
+	aspect-ratio: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 150px;
+	max-height: 150px;
+	max-width: 150px;
+	border: none;
+}
+
+.template-grid a {
+	border: none;
+}
+
+.template-tile:hover {
+	background-color: #4a5d71;
+}
+
+.template-tile .icon {
+	font-size: 1.8rem;
+	margin-bottom: 0.5rem;
+	color: #9bf1ff;
+}
+
+.template-tile h3 {
+	font-size: 0.85rem;
+	margin: 0;
+	color: #ffffff;
+	line-height: 1.2;
+}
+
+.template-tile p {
+	font-size: 0.7rem;
+	margin: 0.3rem 0 0 0;
+	color: #c1c1c1;
+}
+
+.template-section {
+	margin-bottom: 4rem;
+}
+
+.template-section h2 {
+	margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 980px) {
+	.template-grid.grid-3x4,
+	.template-grid.grid-3x3 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: 736px) {
+	.template-grid {
+		grid-template-columns: 1fr !important;
+	}
+}
