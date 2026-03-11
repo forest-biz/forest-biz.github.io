@@ -1,1 +1,1 @@
-Forest Business Alliance website v2.0. Hosted for free on github.
+Forest Business Alliance [website](https://forestbusinessalliance.org/) v2.0. Hosted on github pages.
